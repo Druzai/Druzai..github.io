@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Сайт про операционные системы">
+        <link rel="icon" href="favicon.ico"><!--Иконка страницы-->
+        <script src="js/scripts.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/styles.css"><!--Подключение внешней таблицы стилей-->
+        <title>Главная - Сайт про операционные системы</title><!--Название страницы-->
+    </head>
+    <body>
+        <div id="navbar-top">
+            <div id="navbar">
+            <a href="#main" onclick="getURL('index.html')" id="logo">Сайт про ОС</a>
+            <div id="navbar-right">
+                <a class="active" href="#main" onclick="getURL('index.html')">Главная</a>
+                <a href="#about-OS" onclick="getURL('about-OS.html')">Что такое ОС?</a>
+                <div class="dropdown">
+                    <div class="dropdown-button">
+                        <button class="dropbtn" onclick="myFunction()">Статьи про ОС ▼</button>
+                    </div>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="#Unix.html" onclick="getURL('OS/Unix.html')">Unix</a>
+                        <a href="#BSD.html" onclick="getURL('OS/BSD.html')">BSD</a>
+                        <a href="#Windows.html" onclick="getURL('OS/Windows.html')">Windows</a>
+                        <a href="#Linux.html" onclick="getURL('OS/Linux.html')">Linux</a>
+                        <a href="#mac_OS.html" onclick="getURL('OS/mac_OS.html')">mac OS</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id="main-text">
+            <span style="width: 100%;text-align: center; font-family: Arial, Helvetica, sans-serif;"><a href="https://aminoapps.com/c/memi-amino666/page/item/istoriia-mema-lenny-face/MQRB_5DeI0IgRN0jrn1oE2M5Ved5b5qkmXg" title="Ну, давай, нажми...">( ͡° ͜ʖ ͡°)</a></span><br>
+            <p>Приветствую Вас на главной странице сайта про операционные системы!<br><br>Этот сайт был создан при выполнении курсовой работы по предмету «Разработка клиентских частей интернет ресурсов» на тему «Современные операционные системы» с использованием технологий HTML5, CSS3, JavaScript.</p>
+            <p>На этом сайте Вы можете ознакомиться с понятием "<a href="#about-OS" onclick="getURL('about-OS.html')">Что такое ОС?</a>".<br>А также узнать про известные ОС, их историю и развитие:
+            </p>
+            <ol>
+                <li><a href="#Unix.html" onclick="getURL('OS/Unix.html')" title="Unix">Unix</a></li>
+                <li><a href="#BSD.html" onclick="getURL('OS/BSD.html')" title="BSD">BSD</a></li>
+                <li><a href="#Windows.html" onclick="getURL('OS/Windows.html')" title="Windows">Windows</a></li>
+                <li><a href="#Linux.html" onclick="getURL('OS/Linux.html')" title="Linux">Linux</a></li>
+                <li><a href="#mac_OS.html" onclick="getURL('OS/mac_OS.html')" title="mac OS">mac OS</a></li>
+            </ol>
+        </div>
+        <footer class="footer">
+            <hr>
+            <p>Автор: Сосунов Андрей<br> Почта для связи: <a href="mailto: astyn37@gmail.com">astyn37@gmail.com</a></p>
+        </footer>
+    </body>
+</html>
