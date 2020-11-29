@@ -29,10 +29,20 @@
     opacity: 94%;
 }
 
+.img-div-r {
+    height: 27em;
+    z-index: 2;
+    position: relative;
+    border-radius: 12px;
+    border: 1px solid rgb(99, 255, 247);
+    opacity: 100%;
+}
+
 .right-img-div p, .left-img-div p {
 	margin-top: -4px;
     margin-bottom: -1px;
     text-align: center;
+    background: none;
 }
 
 
@@ -72,6 +82,10 @@
     .left-img, .right-img, .right-img-div, .left-img-div {
         width: 14.6em;
     }
+    .img-div-r {
+        width: none;
+        height: 14.6em;
+    }
     .left-img, .right-img {
         margin-top: 20px;
     }
@@ -96,7 +110,12 @@
         float: none;
         margin: 0;
         margin-top: 12px
-    }/*
+    }
+    .img-div-r {
+        width: 100%;
+        height: initial;
+    }
+    /*
     .right-img-div, .left-img-div {
         margin-top: 15px;
     }*/
