@@ -49,7 +49,7 @@ window.onresize = function() {
 };
 
 function goToTop() {
-  document.body.scrollTop = 0; // Sfari
+  document.body.scrollTop = 0; // Safari
   document.documentElement.scrollTop = 0; // Chrome, FF, Opera
 }
 
