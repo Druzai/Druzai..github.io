@@ -1,0 +1,103 @@
+.left-img, .left-img-div {
+    float:left; /* Выравнивание по левому краю */
+}
+.right-img, .right-img-div  {
+    float: right; /* Выравнивание по правому краю  */
+}
+
+.left-img, .right-img {
+    width: 27em;
+    z-index: 2;
+    position: relative;
+    border-radius: 12px;
+    border:1px solid rgb(99, 255, 247);
+    margin:15px;
+    margin-top: 23px;
+    margin-bottom: 0px;
+}
+
+.right-img-div, .left-img-div {
+    width: 27em;
+    z-index: 2;
+    position: relative;
+    border-radius: 12px;
+    border:1px solid rgb(99, 255, 247);
+    margin:15px;
+    margin-top: 35px;
+    margin-bottom: 0px;
+    background-color: rgb(255, 255, 255);
+    opacity: 94%;
+}
+
+.right-img-div p, .left-img-div p {
+	margin-top: -4px;
+    margin-bottom: -1px;
+    text-align: center;
+}
+
+
+.img-in-div {
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    border-radius: 12px;
+    border: 1px solid rgb(99, 255, 247);
+    opacity: 100%;
+}
+
+.toc p, .toc span {
+    background-color: none;
+    border-radius: 12px;
+    text-align: justify;
+    padding: 0px;
+    /*opacity: 94%;*/
+}
+
+#in-ol {
+    text-align: left !important;
+    word-wrap: wrap;
+}
+
+.toc {
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    padding: 10px;
+    opacity: 94%;
+    width: max-content;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+ @media screen and (max-width: 865px) {
+    .left-img, .right-img, .right-img-div, .left-img-div {
+        width: 14.6em;
+    }
+    .left-img, .right-img {
+        margin-top: 20px;
+    }
+    .toc {
+        width: 100%;
+        position: relative;
+    }
+  }
+
+  @media screen and (max-width: 670px) {
+    .right-img-div, .left-img-div {
+        margin-top: 20px;
+    }
+    .left-img, .right-img {
+        margin-top: 12px;
+    }
+  } 
+
+  @media screen and (max-width: 515px) {
+    .left-img, .right-img, .right-img-div, .left-img-div {
+        width: 100%;
+        float: none;
+        margin: 0;
+        margin-top: 12px
+    }/*
+    .right-img-div, .left-img-div {
+        margin-top: 15px;
+    }*/
+  } 

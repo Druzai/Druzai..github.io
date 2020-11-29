@@ -1,24 +1,61 @@
 * {box-sizing: border-box;}
 
- body {
-     background-image: url("../assets/img/pexels-kevin-ku-577585.jpg");
-     background-repeat: no-repeat;
-     background-attachment: fixed;
-     background-size: cover;
- }
+body {
+    background-image: url("../assets/img/pexels-kevin-ku-577585.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+ html {
+  scroll-behavior: smooth;
+}
 
  span a {
     color: inherit;
     text-decoration: inherit;
  }
 
- p, span, ol, h1 {
+ #ol-syst {
+    width: max-content;
+ }
+
+ p, span, ol, ul {
     background-color: rgb(255, 255, 255);
     border-radius: 12px;
     text-align: justify;
     padding: 10px;
     opacity: 94%;
  }
+
+ #p-span {
+  background: none;
+  opacity: 100%;
+  padding: 0px;
+}
+
+
+ span {
+    width: 100%;
+    text-align: center;
+ }
+
+ #top-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #cfcfcf;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
 
  #main-text ol {
     padding-left: 43px;
@@ -48,7 +85,7 @@
     position: fixed; /* Sticky/fixed navbar */
     width: 100%;
     top: 0; /* At the top */
-    z-index: 2;
+    z-index: 10;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 8px;
  }
@@ -62,7 +99,7 @@
     position: fixed; /* Sticky/fixed navbar */
     width: 100%;
     top: 0; /* At the top */
-    z-index: 2;
+    z-index: 10;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 8px;
   }
@@ -87,7 +124,7 @@
   }
   
   /* Links on mouse-over */
-  #navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus, .dropdown-content a:hover {
+  #navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus, .dropdown-content a:hover, #top-button:hover {
     background-color: #ddd;
     color: black;
   }
@@ -196,4 +233,22 @@
     #main-text {
         margin-top:260px;
     }
-  } 
+    p, span, ol {
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    #p-span {
+      background-color: rgb(255, 255, 255);
+      opacity: 94%;
+      padding: 10px;
+    }
+    #p-span span {
+      background: none;
+      border-radius: 0px;
+      text-align: justify;
+      opacity: 94%;
+      padding: 0px;
+    }
+  }
