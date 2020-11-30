@@ -16,6 +16,15 @@
     margin-bottom: 0px;
 }
 
+.center-img {
+    z-index: 2;
+    position: relative;
+    border-radius: 12px;
+    border:1px solid rgb(99, 255, 247);
+    width: 53em;
+    margin-bottom: 10px;
+}
+
 .right-img-div, .left-img-div {
     width: 27em;
     z-index: 2;
@@ -61,6 +70,10 @@
     text-align: justify;
     padding: 0px;
     /*opacity: 94%;*/
+}
+
+#div-img-min {
+    width: max-content;
 }
 
 #in-ol {
@@ -115,8 +128,18 @@
         width: 100%;
         height: initial;
     }
+    #div-img-min {
+        width: 100%;
+    }
     /*
     .right-img-div, .left-img-div {
         margin-top: 15px;
     }*/
-  } 
+  }
+
+  @media screen and (max-width: 1200px) {
+    .center-img {
+        width: 100%;  
+        height: auto;
+    }
+  }
