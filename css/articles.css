@@ -69,7 +69,6 @@
     border-radius: 12px;
     text-align: justify;
     padding: 0px;
-    /*opacity: 94%;*/
 }
 
 #div-img-min {
@@ -131,10 +130,6 @@
     #div-img-min {
         width: 100%;
     }
-    /*
-    .right-img-div, .left-img-div {
-        margin-top: 15px;
-    }*/
   }
 
   @media screen and (max-width: 1200px) {

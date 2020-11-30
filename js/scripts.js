@@ -1,3 +1,4 @@
+// Анимация уменьшения и скрытия меню (в мобильной версии сайта) при прокрутке вниз
 window.onscroll = function() {
   let topButton = document.getElementById("top-button");
   if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
@@ -24,11 +25,10 @@ window.onscroll = function() {
     else {
       document.getElementById("navbar-top").style.padding = null;
       setTimeout(() => {document.getElementById("navbar-right").style.display = null;}, 150);
-      //document.getElementById("navbar-right").style.display = null;
     }
   }
 };
-
+// Скрытие и отображение ссылок меню при изменении размера страницы
 window.onresize = function() {
   if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
     if (window.innerWidth > 670) {
@@ -47,38 +47,23 @@ window.onresize = function() {
     }
   }
 };
-
+// Перемащение вверх страницы
 function goToTop() {
-  document.body.scrollTop = 0; // Safari
-  document.documentElement.scrollTop = 0; // Chrome, FF, Opera
+  document.body.scrollTop = 0; // Для Safari
+  document.documentElement.scrollTop = 0; // Для Chrome, FF, Opera
 }
 
-/*if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    topButton.style.display = "block";
-  } else {
-    topButton.style.display = "none";
-  } */
-
-
-
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+// Функция добавляет класс show выпадающему списку
 function showDropDown() {
   document.getElementById("myDropdown").classList.toggle("show");
   //document.getElementsByClassName("dropbtn")[0].innerHTML = "Статьи про ОС ▲"
 }
 
-// Close the dropdown if the user clicks outside of it
+// Функция скрывает выпадающий список
 window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) {
     let myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
+    if (myDropdown.classList.contains('show'))
       myDropdown.classList.remove('show');
-      /*document.getElementsByClassName("dropbtn")[0].innerHTML = "Статьи про ОС ▼";*/
-    }
   }
-  /*
-  if (e.target.matches('.dropbtn') && myDropdown.classList.contains('show')) {
-    document.getElementsByClassName("dropbtn")[0].innerHTML = "Статьи про ОС ▼";
-  }*/
 }
