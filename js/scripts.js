@@ -56,7 +56,6 @@ function goToTop() {
 // Функция добавляет класс show выпадающему списку
 function showDropDown() {
   document.getElementById("myDropdown").classList.toggle("show");
-  //document.getElementsByClassName("dropbtn")[0].innerHTML = "Статьи про ОС ▲"
 }
 
 // Функция скрывает выпадающий список
