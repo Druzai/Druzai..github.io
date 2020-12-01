@@ -25,11 +25,18 @@
     opacity: 94%;
  }
 
- #p-span {
+ #p-span-center {
   background: none;
   opacity: 100%;
   padding: 0px;
-}
+  text-align: center !important;
+ }
+
+#p-span {
+  background: none;
+  opacity: 100%;
+  padding: 0px;
+ }
 
 
  span {
@@ -236,6 +243,18 @@
       padding: 10px;
     }
     #p-span span {
+      background: none;
+      border-radius: 0px;
+      text-align: justify;
+      opacity: 94%;
+      padding: 0px;
+    }
+    #p-span-center {
+      background-color: rgb(255, 255, 255);
+      opacity: 94%;
+      padding: 10px;
+    }
+    #p-span-center span {
       background: none;
       border-radius: 0px;
       text-align: justify;
